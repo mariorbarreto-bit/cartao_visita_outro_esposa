@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartão de Visita</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download { background: #22c55e; }
+.whatsapp { background: #25D366; }
+.email { background: #3b82f6; }
+.contact { background: #f59e0b; }
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Cartão Digital</h2>
+
+<img src="cartao.png" alt="Cartão de Visita">
+
+<button class="download" onclick="downloadImage()">📥 Baixar Cartão</button>
+
+<a href="contato.vcf" download>
+    <button class="contact">📇 Salvar Contato</button>
+</a>
+
+<a href="https://wa.me/5521978352349" target="_blank">
+    <button class="whatsapp">💬 WhatsApp</button>
+</a>
+
+<a href="mailto:luciazani@sapo.pt">
+    <button class="email">📧 Email</button>
+</a>
+
+</div>
+
+<script>
+function downloadImage() {
+    const link = document.createElement('a');
+    link.href = 'cartao.png';
+    link.download = 'cartao.png';
+    link.click();
+}
+</script>
+
+</body>
+</html>
