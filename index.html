@@ -35,10 +35,10 @@ button {
     cursor: pointer;
 }
 
-.download { background: #22c55e; }
-.whatsapp { background: #25D366; }
-.email { background: #3b82f6; }
-.contact { background: #f59e0b; }
+.download { background: #22c55e; /*#22c55e*/}
+.whatsapp { background: #3b82f6;/*#25D366*/ }
+.email { background: #3b82f6; /*#3b82f6*/}
+.contact { background: #f59e0b; /*#f59e0b*/}
 
 button:hover {
     opacity: 0.9;
@@ -53,7 +53,7 @@ button:hover {
 
 <h2>Cartão Digital</h2>
 
-<img src="cartao.png" alt="Cartão de Visita">
+<img src="cartao_Lucia_Zani_terapeuta.png" alt="Cartão de Visita">
 
 <button class="download" onclick="downloadImage()">📥 Baixar Cartão</button>
 
@@ -65,17 +65,17 @@ button:hover {
     <button class="whatsapp">💬 WhatsApp</button>
 </a>
 
-<a href="mailto:luciazani@sapo.pt">
+<!--<a href="mailto:luciazani@sapo.pt">
     <button class="email">📧 Email</button>
-</a>
+</a>-->
 
 </div>
 
 <script>
 function downloadImage() {
     const link = document.createElement('a');
-    link.href = 'cartao.png';
-    link.download = 'cartao.png';
+    link.href = 'cartao_Lucia_Zani_terapeuta.png';
+    link.download = 'cartao_Lucia_Zani_terapeuta.png';
     link.click();
 }
 </script>
