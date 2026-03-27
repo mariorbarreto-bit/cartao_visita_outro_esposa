@@ -28,8 +28,8 @@ button {
     color: #fff;
 }
 
-.download { background: #e66007; /*#22c55e #11602e */}
-.whatsapp { background: #167a3b;/*#25D366*/ }
+.download { background: #22c55e; /*#22c55e */}
+.whatsapp { background: #0f5328;/*#25D366*/ }
 .email { background: #3b82f6; /*#3b82f6*/}
 .contact { background: #a06807; /*#f59e0b*/}
 
